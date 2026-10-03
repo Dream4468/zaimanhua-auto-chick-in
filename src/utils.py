@@ -59,7 +59,7 @@ def extract_user_info_from_cookies(cookie_str):
             if item.startswith('token='):
                 user_info['token'] = item[6:]
                 break
-    print(user_info)
+    
     return user_info
 
 
