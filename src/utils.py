@@ -23,6 +23,7 @@ def extract_user_info_from_cookies(cookie_str):
             # 尝试解析为 JSON
             try:
                 parsed = json.loads(lginfo_decoded)
+                
                 # 确保解析结果是字典类型（防止 JSON 字符串字面量导致 .get() 失败）
                 if isinstance(parsed, dict):
                     user_info = parsed
@@ -58,7 +59,7 @@ def extract_user_info_from_cookies(cookie_str):
             if item.startswith('token='):
                 user_info['token'] = item[6:]
                 break
-
+    print(user_info)
     return user_info
 
 
