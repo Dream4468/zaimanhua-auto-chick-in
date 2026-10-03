@@ -62,6 +62,7 @@ def post_daily_comment(page, cookie_str):
     # 预检查：手机绑定状态和任务状态
     user_info = extract_user_info_from_cookies(cookie_str)
     token = user_info.get('token')
+    print(user_info)
     
     # 检查任务是否已完成
     if token:
