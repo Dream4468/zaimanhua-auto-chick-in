@@ -1,5 +1,5 @@
 """原创漫画征稿季自动化模块
-
+test
 活动入口: https://yuanchuang.zaimanhua.com/2026spring/
 功能:
   1. 自动完成关注主办官号、分享页面、阅读参赛作品任务
